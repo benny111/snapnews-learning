@@ -3,17 +3,20 @@ window.addEventListener("load", function() {
     Modernizr.load([
         {
             load : [
-            	"js/game.js",
+            	/*"js/news.js",*/
                 "js/jquery.min.js",
                 "js/sizzle.js",
-                "js/event_handle.js",
+                "js/bootstrap.js",
+                
 
             ],
-            complete : function() {
+            
+            //complete : function() {
                /* $(cover).hover( function(){ alert("Ready....");});*/
-                $(cover).hover(GameModule.test());
+            //    $(cover).hover(GameModule.test());
                 /*$(cover).click(EventHandler.click());*/
-            }
+
+            //}
         }
     ]);
 
