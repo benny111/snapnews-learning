@@ -4,22 +4,28 @@
 	<meta charset="UTF-8">
 	<title>snapnews-learning</title>
 	<link rel="stylesheet" href="css/bootstrap.css" />
+	<!--<link rel="stylesheet" href="css/style.css" />-->
 	<script src="js/modernizr_min.js" type="text/javascript"></script>
 	<script src="js/loader.js" type="text/javascript"></script>
 </body>
 </head>
 <body>
-	<div class=row>
-		<div class=col-md-8>
-			<div id="photo">
-			photo
+	<div id='target'>Target</div>
+	<div id='end'> End</div>
+	<script type='text/template' id="tmpl-news">
+		<div class=row>
+			<div class=col-md-8>
+				<div id="photo">
+					<a href="#" class="thumbnail"><img src='${photo}' /></a>
+				</div>
+			</div>
+			<div class=col-md-2>
+				<div id="message">
+					<p class="lead">${title}</p>
+				</div>
 			</div>
 		</div>
-		<div class=col-md-2>
-			<div id="message">
-			message
-			</div>
-		</div>
-	</div>
+	</script>
+
 </body>
 </html>
